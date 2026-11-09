@@ -1,9 +1,79 @@
-# Fred Benjamin Onyango — Portfolio
+# Fred Benjamin Onyango — ICT Support Portfolio
 
-A standalone HTML, CSS and JavaScript version of the portfolio. It preserves the original sections, content, design direction, portrait, project images, CV download, navigation, and contact form behavior.
+A responsive, single-page portfolio for **Fred Benjamin Onyango**, an ICT Support Technician and Network Support professional based in Homa Bay County, Kenya. The site brings together professional experience, education, technical skills, selected projects, certifications, and contact information in one place.
 
-## Open
+**GitHub Pages URL (after enabling Pages):** [benjaminfred-onyango.github.io/Portfolio](https://benjaminfred-onyango.github.io/Portfolio)  
+**GitHub repository:** [benjaminfred-onyango/Portfolio](https://github.com/benjaminfred-onyango/Portfolio)
 
-Open `index.html` in a modern browser, or serve this folder with any static web host. All images and the CV PDF are in `assets/`.
+> The live address works once GitHub Pages has been enabled for this repository. See [Publish with GitHub Pages](#publish-with-github-pages) for setup instructions.
 
-The contact form validates the entries and opens a pre-filled message in the visitor's email app; it does not send messages to a server.
+## About the portfolio
+
+The site presents Fred’s experience supporting healthcare, corporate, and academic environments. It highlights practical ICT service delivery, reliable systems, secure information handling, and end-user support.
+
+### What’s included
+
+- **Professional profile:** An introduction, location, languages, and career highlights.
+- **Work experience:** Current ICT Technician role and previous industrial attachments.
+- **Education and skills:** ICT qualifications and capabilities across support, networking, cybersecurity, healthcare systems, data management, and user training.
+- **Selected projects:** Six examples covering local area networks, Wi-Fi, healthcare systems, cybersecurity, sports management, and hostel management.
+- **Certifications and training:** Professional development in cybersecurity, networking, programming, data analytics, and AI.
+- **Recommendations and services:** A recommendation and an overview of ICT support services.
+- **Responsive navigation:** Section links, a mobile menu, and current-section highlighting.
+- **Contact and CV:** A downloadable CV and a contact form that validates the message and opens WhatsApp with a pre-filled draft.
+- **Accessibility-minded details:** Semantic page sections, descriptive image text, visible form feedback, and keyboard support for the mobile menu.
+
+## Technologies
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+
+There is no package manager, framework, build step, or server-side application required. Google Fonts are loaded from Google Fonts when an internet connection is available; local system fonts are used as fallbacks.
+
+## Run locally
+
+1. Clone or download this repository.
+2. Open `index.html` in a modern web browser.
+
+Alternatively, open the project folder in Visual Studio Code and use a local static-file server extension such as Live Server. The site’s HTML, CSS, JavaScript, and assets are served as static files.
+
+## Publish with GitHub Pages
+
+This project can be hosted as a static site with GitHub Pages:
+
+1. Open the repository’s **Settings** on GitHub.
+2. Go to **Pages**.
+3. Under **Build and deployment**, choose **Deploy from a branch**.
+4. Select the `main` branch and the `/(root)` folder, then save.
+5. After GitHub Pages completes deployment, open the published URL shown in the Pages settings.
+
+The site has no build command: `index.html` is at the repository root, and its CSS, JavaScript, and assets use relative paths.
+
+## Project structure
+
+```text
+.
+├── index.html       # Page content and metadata
+├── styles.css       # Layout, responsive styling, and animations
+├── script.js        # Navigation, scroll effects, and contact form behavior
+├── README.md        # Project documentation
+└── assets/
+    ├── favicon.ico
+    ├── favicon.svg
+    ├── fred-portrait.png
+    ├── project-*.jpg
+    └── *.pdf        # CV, recommendation, and certificates
+```
+
+## Contact form behavior
+
+The form runs entirely in the visitor’s browser. It validates the entered name, email, subject, and message, then opens WhatsApp with a pre-filled message. **It does not send the message to a server or submit it automatically.** The visitor must review and send the draft in WhatsApp. Opening the contact link requires an internet connection and a browser or device capable of handling WhatsApp links.
+
+## Public files and privacy
+
+This repository is public. Files committed here—including the CV, recommendation, portrait, and certificate PDFs—can be viewed or downloaded by anyone. Do not add passwords, private contact records, confidential documents, or other sensitive material to this repository.
+
+## Maintenance
+
+To update the portfolio, edit the relevant content in `index.html`, visual styles in `styles.css`, or interactive behavior in `script.js`. Keep linked files in the expected locations under `assets/`, or update their relative paths in the HTML. After a change, open the page in a browser and check the desktop and mobile layouts, navigation links, asset links, and contact flow.
