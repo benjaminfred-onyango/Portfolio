@@ -2,10 +2,8 @@
 
 A responsive, single-page portfolio for **Fred Benjamin Onyango**, an ICT Support Technician and Network Support professional based in Homa Bay County, Kenya. The site brings together professional experience, education, technical skills, selected projects, certifications, and contact information in one place.
 
-**GitHub Pages URL (after enabling Pages):** [benjaminfred-onyango.github.io/Portfolio](https://benjaminfred-onyango.github.io/Portfolio)  
+**Live portfolio:** [fredportfolio-one.vercel.app](https://fredportfolio-one.vercel.app)  
 **GitHub repository:** [benjaminfred-onyango/Portfolio](https://github.com/benjaminfred-onyango/Portfolio)
-
-> The live address works once GitHub Pages has been enabled for this repository. See [Publish with GitHub Pages](#publish-with-github-pages) for setup instructions.
 
 ## About the portfolio
 
@@ -38,17 +36,16 @@ There is no package manager, framework, build step, or server-side application r
 
 Alternatively, open the project folder in Visual Studio Code and use a local static-file server extension such as Live Server. The site’s HTML, CSS, JavaScript, and assets are served as static files.
 
-## Publish with GitHub Pages
+## Deployment on Vercel
 
-This project can be hosted as a static site with GitHub Pages:
+This static site is hosted on [Vercel](https://vercel.com/). To deploy it from GitHub:
 
-1. Open the repository’s **Settings** on GitHub.
-2. Go to **Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the `main` branch and the `/(root)` folder, then save.
-5. After GitHub Pages completes deployment, open the published URL shown in the Pages settings.
+1. Import the [GitHub repository](https://github.com/benjaminfred-onyango/Portfolio) into a Vercel project, or connect it in the settings of the existing Vercel project.
+2. Keep the project root set to the repository root.
+3. Use the **Other** framework preset. This project has no build or install command; leave those fields empty.
+4. Deploy the project. Subsequent commits to the connected branch can trigger new deployments automatically.
 
-The site has no build command: `index.html` is at the repository root, and its CSS, JavaScript, and assets use relative paths.
+The deployment serves `index.html` directly from the repository root. CSS, JavaScript, and asset references use relative paths, so no build step or environment variables are required.
 
 ## Project structure
 
